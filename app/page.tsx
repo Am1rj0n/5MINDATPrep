@@ -344,10 +344,30 @@ export default function DATPrep() {
           <StudyGuides />
         )}
 
-        {/* Footer */}
-        <div className="text-center text-gray-500 text-sm">
-          <p>New question available daily at midnight EST • Good luck on your DAT!</p>
-        </div>
+        {/* Custom Footer - Replaces "Built in V0" */}
+        <footer className="mt-12 py-8 border-t border-gray-200 bg-white/50 rounded-lg">
+          <div className="text-center">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">5 MIN DAT PREP</h3>
+              <p className="text-sm text-gray-600 max-w-2xl mx-auto">
+                Your daily companion for DAT success. Practice one question each day and build the knowledge you need to
+                excel on the Dental Admission Test.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-500">
+              <span>© 2024 5 Min DAT Prep</span>
+              <span className="hidden sm:inline">•</span>
+              <span>New questions daily at midnight EST</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Good luck on your DAT!</span>
+            </div>
+
+            <div className="mt-4 text-xs text-gray-400">
+              <p>Educational resources provided by Khan Academy, OpenStax, and other open-source platforms</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   )
